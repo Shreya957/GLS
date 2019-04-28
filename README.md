@@ -69,8 +69,6 @@ cd /vagrant
  ##### The three class segments RETREIVES DETAILS FROM THE CONTENT PROPERTY OF guide.json (availble in static folder) to display the tooltip
  ##### HOVER OVER EACH ELEMENT TO DISPLAY THE TOOLTIP
  ##### SCREENT SHOTS BELOW.
- 
-  ![Screeshot](https://github.com/Shreya957/GLS/blob/master/images/homepage.PNG)
    ![Screeshot](https://github.com/Shreya957/GLS/blob/master/images/tootip_class1.png)
     ![Screeshot](https://github.com/Shreya957/GLS/blob/master/images/tooltip_class2.png)
      ![Screeshot](https://github.com/Shreya957/GLS/blob/master/images/tooltip_class3.png)
