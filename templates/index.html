@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GLS Fullstack Exercise</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+.myClass1 {padding: 10px 20px;border: 1px solid green;margin-bottom: 50px;}
+
+.myClass2 {padding: 50px;border: 1px solid red;display: inline-block;position: absolute;right: 0px;}
+
+.myClass3 {padding: 50px;border: 1px solid blue;display: inline-block;position: absolute;left: 0px; bottom: 0px;}		
+	</style>
+</head>
+<body>
+	<h1>GLS Fullstack Exercise</h1>
+    <div class="container">
+        
+	   <div class="myClass1" id="id_1">
+           <span title>First tip on me using id.</span>
+        </div>
+
+	   <div class="myClass2">Second tip on me using class.</div>
+
+	   <div class="myClass3">I am the 3rd div. 3rd tip on me using xpath.</div>
+    </div>
+     <p id="demo"></p>   
+<script>
+    
+
+    
+$(document).ready(function(){
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}
+
+//usage:
+readTextFile("static/guide.json", function(text){
+    var data = [];
+    data = JSON.parse(text);
+    console.log(data);
+});
+  $(".myClass1 span").attr('title',"text");
+  $(".myClass1 span").tooltip();
+  
+});
+    
+    //$('.myClass1, .myClass2, .myClass3').hover
+</script>
+</body>
+</html>
