@@ -1,7 +1,7 @@
 # GLS
 GLS Fullstack Technical Interview
 
-## PREREQUISITE and PREPRATION
+#### PREREQUISITE and PREPRATION
 
 
 
